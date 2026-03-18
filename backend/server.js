@@ -1,7 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
-const mongoose = require('mongoose');
 
 dotenv.config();
 
@@ -11,23 +10,11 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 
-const contactSchema = new mongoose.Schema({
-  name: String,
-  email: String,
-  message: String,
-  createdAt: { type: Date, default: Date.now },
-});
-
-const Contact = mongoose.model('Contact', contactSchema);
+// MongoDB dependencies removed
 
 async function start() {
   try {
-    if (process.env.MONGO_URI) {
-      await mongoose.connect(process.env.MONGO_URI);
-      console.log('MongoDB connected');
-    } else {
-      console.warn('MONGO_URI not set. Skipping MongoDB connection.');
-    }
+    console.log('Starting server in stateless mode (No DB)...');
 
     app.get('/api/health', (req, res) => {
       res.json({ status: 'ok' });
@@ -35,12 +22,11 @@ async function start() {
 
     app.post('/api/contact', async (req, res) => {
       try {
-        const contact = new Contact(req.body);
-        await contact.save();
-        res.status(201).json({ message: 'Message received' });
+        console.log("New Contact:", req.body); // just log
+        res.status(201).json({ message: 'Message received (no DB)' });
       } catch (err) {
         console.error(err);
-        res.status(500).json({ error: 'Failed to save message' });
+        res.status(500).json({ error: 'Something went wrong' });
       }
     });
 
