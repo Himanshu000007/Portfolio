@@ -43,6 +43,12 @@ const Navbar = () => {
         <NavLink to="/education" className={({ isActive }) => (isActive ? 'active' : '')}>
           Education
         </NavLink>
+        <NavLink to="/training" className={({ isActive }) => (isActive ? 'active' : '')}>
+          Training
+        </NavLink>
+        <NavLink to="/certification" className={({ isActive }) => (isActive ? 'active' : '')}>
+          Certification
+        </NavLink>
         <NavLink to="/extra-curricular" className={({ isActive }) => (isActive ? 'active' : '')}>
           Coding Profiles
         </NavLink>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Education = () => (
-  <div className="section">
+  <div className="section fade-in">
     <h2>Education</h2>
     <div className="timeline-item">
       <h3>Lovely Professional University</h3>

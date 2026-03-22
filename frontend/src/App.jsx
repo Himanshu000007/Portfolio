@@ -6,6 +6,8 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Education from './components/Education';
+import Training from './components/Training';
+import Certification from './components/Certification';
 import Contact from './components/Contact';
 import ExtraCurricular from './components/ExtraCurricular';
 import Footer from './components/Footer';
@@ -21,6 +23,8 @@ const App = () => {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/education" element={<Education />} />
+          <Route path="/training" element={<Training />} />
+          <Route path="/certification" element={<Certification />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/extra-curricular" element={<ExtraCurricular />} />
         </Routes>

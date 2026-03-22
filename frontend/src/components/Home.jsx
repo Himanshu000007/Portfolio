@@ -1,10 +1,14 @@
 import React from 'react';
 import { Download, ChevronRight, Code2, Rocket, Brain } from 'lucide-react';
 import profileImg from '../assets/Profile.png';
+import Education from './Education';
+import Training from './Training';
+import Certification from './Certification';
 
 const Home = () => {
   return (
-    <div className="hero">
+    <>
+      <div className="hero">
       <div className="blob blob-1"></div>
       <div className="blob blob-2"></div>
 
@@ -52,10 +56,16 @@ const Home = () => {
       <div className="hero-photo-container">
         <div className="hero-photo-wrapper">
           <img src={profileImg} alt="Himanshu Kumar" className="hero-photo" />
-          <div className="photo-backdrop"></div>
         </div>
       </div>
-    </div>
+      </div>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '2rem' }}>
+        <Education />
+        <Training />
+        <Certification />
+      </div>
+    </>
   );
 };
 
