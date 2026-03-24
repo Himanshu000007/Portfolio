@@ -1,9 +1,7 @@
 import React from 'react';
 import { Download, ChevronRight, Code2, Rocket, Brain } from 'lucide-react';
 import profileImg from '../assets/Profile.png';
-import Education from './Education';
-import Training from './Training';
-import Certification from './Certification';
+
 
 const Home = () => {
   return (
@@ -60,11 +58,7 @@ const Home = () => {
       </div>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '2rem' }}>
-        <Education />
-        <Training />
-        <Certification />
-      </div>
+
     </>
   );
 };

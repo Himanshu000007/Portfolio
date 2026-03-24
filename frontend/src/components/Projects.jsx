@@ -28,7 +28,7 @@ const Projects = () => (
         <span style={tagStyle}>[RESTful APIs]</span>
         <span style={tagStyle}>[JWT]</span>
       </div>
-      <a href="https://github.com/Himanshu000007" target="_blank" rel="noreferrer" className="btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>
+      <a href="https://github.com/Himanshu000007/Learning" target="_blank" rel="noreferrer" className="btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>
         <Github size={14} style={{ marginRight: '0.4rem' }} /> Source Code
       </a>
     </div>
@@ -52,7 +52,7 @@ const Projects = () => (
         <span style={tagStyle}>[React]</span>
         <span style={tagStyle}>[RESTful APIs]</span>
       </div>
-      <a href="https://github.com/Himanshu000007" target="_blank" rel="noreferrer" className="btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>
+      <a href="https://github.com/Himanshu000007/InnerLight" target="_blank" rel="noreferrer" className="btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>
         <Github size={14} style={{ marginRight: '0.4rem' }} /> Source Code
       </a>
     </div>
@@ -77,7 +77,7 @@ const Projects = () => (
         <span style={tagStyle}>[React]</span>
         <span style={tagStyle}>[RESTful APIs]</span>
       </div>
-      <a href="https://github.com/Himanshu000007" target="_blank" rel="noreferrer" className="btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>
+      <a href="https://github.com/Himanshu000007/Real-Time-Chat" target="_blank" rel="noreferrer" className="btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>
         <Github size={14} style={{ marginRight: '0.4rem' }} /> Source Code
       </a>
     </div>
