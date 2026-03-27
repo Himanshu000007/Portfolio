@@ -12,7 +12,7 @@ const About = () => {
           a commitment to continuous learning.
         </p>
 
-        <div className="resume-highlights" style={{ marginTop: '2.5rem' }}>
+        <div className="resume-highlights fade-in" style={{ marginTop: '2.5rem', animationDelay: '0.1s' }}>
           <h3 style={{ color: 'var(--text)', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             🔥 Resume Highlights
           </h3>
@@ -24,7 +24,7 @@ const About = () => {
           </ul>
         </div>
 
-        <div className="currently-learning" style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--card)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+        <div className="currently-learning fade-in" style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--card)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', animationDelay: '0.2s' }}>
           <h3 style={{ color: 'var(--text)', marginTop: 0, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             🚀 Currently Learning
           </h3>

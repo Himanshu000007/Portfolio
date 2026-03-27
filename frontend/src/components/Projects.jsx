@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, BookOpen, HeartPulse, MessageSquare } from 'lucide-react';
 
 const Projects = () => (
   <div className="section fade-in">
@@ -8,7 +8,10 @@ const Projects = () => (
       Here are a few select projects spanning full-stack development, AI, and real-time systems.
     </p>
 
-    <div className="project-card fade-in" style={{ animationDelay: '0.1s' }}>
+    <div className="project-card fade-in" style={{ animationDelay: '0.1s', display: 'flex', flexDirection: 'column' }}>
+      <div className="project-graphic" style={{ height: '160px', borderRadius: '8px', background: 'linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(34, 211, 238, 0.15))', marginBottom: '1.2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'transform 0.3s' }}>
+        <BookOpen size={64} color="var(--accent)" style={{ opacity: 0.9 }} />
+      </div>
       <div style={headerStyle}>
         <h3>Dynamic Learning Platform</h3>
         <p className="project-meta">Feb 2026</p>
@@ -33,7 +36,10 @@ const Projects = () => (
       </a>
     </div>
 
-    <div className="project-card fade-in" style={{ animationDelay: '0.2s' }}>
+    <div className="project-card fade-in" style={{ animationDelay: '0.2s', display: 'flex', flexDirection: 'column' }}>
+      <div className="project-graphic" style={{ height: '160px', borderRadius: '8px', background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(59, 130, 246, 0.15))', marginBottom: '1.2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'transform 0.3s' }}>
+        <HeartPulse size={64} color="#10b981" style={{ opacity: 0.9 }} />
+      </div>
       <div style={headerStyle}>
         <h3>Inner Light – Mental Well Being Application</h3>
         <p className="project-meta">Nov 2025</p>
@@ -57,7 +63,10 @@ const Projects = () => (
       </a>
     </div>
 
-    <div className="project-card fade-in" style={{ animationDelay: '0.3s' }}>
+    <div className="project-card fade-in" style={{ animationDelay: '0.3s', display: 'flex', flexDirection: 'column' }}>
+      <div className="project-graphic" style={{ height: '160px', borderRadius: '8px', background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(245, 158, 11, 0.15))', marginBottom: '1.2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'transform 0.3s' }}>
+        <MessageSquare size={64} color="#ef4444" style={{ opacity: 0.9 }} />
+      </div>
       <div style={headerStyle}>
         <h3>Real-Time Chat Application</h3>
         <p className="project-meta">Apr 2025</p>

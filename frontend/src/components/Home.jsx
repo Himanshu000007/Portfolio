@@ -6,6 +6,7 @@ import profileImg from '../assets/Profile.png';
 const Home = () => {
   return (
     <>
+      <div className="bg-animation"></div>
       <div className="hero">
       <div className="blob blob-1"></div>
       <div className="blob blob-2"></div>
@@ -53,7 +54,9 @@ const Home = () => {
 
       <div className="hero-photo-container">
         <div className="hero-photo-wrapper">
-          <img src={profileImg} alt="Himanshu Kumar" className="hero-photo" />
+          <div className="hero-photo-inner">
+            <img src={profileImg} alt="Himanshu Kumar" className="hero-photo" />
+          </div>
         </div>
       </div>
       </div>

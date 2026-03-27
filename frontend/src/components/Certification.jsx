@@ -1,4 +1,5 @@
 import React from 'react';
+import cloudCert from '../assets/cloud computing.png';
 
 const Certification = () => (
   <div className="section fade-in">
@@ -8,9 +9,9 @@ const Certification = () => (
         <h3>Cloud Computing</h3>
         <p className="timeline-meta">Apr 2025</p>
       </div>
-      <p className="timeline-meta">NPTEL · <a href="https://drive.google.com/file/d/1Q32vvL64QbTRgdUa-ybbPuqcyZvALQZg/view" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>Link</a></p>
+      <p className="timeline-meta">NPTEL · <a href="https://drive.google.com/file/d/1Q32vvL64QbTRgdUa-ybbPuqcyZvALQZg/view" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>Drive Link</a></p>
       
-      <div style={{ 
+      <div className="cert-card animate-slide-up" style={{ 
         marginTop: '1.5rem', 
         padding: '12px', 
         background: 'linear-gradient(145deg, #ffffff, #f0f0f0)', 
@@ -21,12 +22,11 @@ const Certification = () => (
         maxWidth: '100%'
       }}>
         <div style={{ border: '1px solid #e0c05a', padding: '4px', borderRadius: '8px', backgroundColor: '#fff', overflow: 'hidden' }}>
-          <iframe 
-            src="https://drive.google.com/file/d/1Q32vvL64QbTRgdUa-ybbPuqcyZvALQZg/preview" 
-            title="Cloud Computing Certificate" 
-            style={{ width: '100%', height: '450px', border: 'none', display: 'block', borderRadius: '4px' }}
-            allow="autoplay"
-          ></iframe>
+          <img 
+            src={cloudCert} 
+            alt="Cloud Computing Certificate" 
+            style={{ width: '100%', maxHeight: '450px', objectFit: 'contain', display: 'block', borderRadius: '4px' }}
+          />
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import javaCert from '../assets/java.png';
 
 const Training = () => (
   <div className="section fade-in">
@@ -9,25 +10,24 @@ const Training = () => (
         <p className="timeline-meta">Jun 2025 - Jul 2025</p>
       </div>
       <p className="timeline-meta" style={{ marginBottom: '1rem' }}>
-        <a href="https://drive.google.com/file/d/1Fuux-rFk550nE3Ub4zx0o9XPuHC0JTBg/view" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>Certificate</a>
+        <a href="https://drive.google.com/file/d/1Fuux-rFk550nE3Ub4zx0o9XPuHC0JTBg/view" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>Certificate Link</a>
       </p>
-      <div style={{ 
-        margin: '1.5rem 0', 
-        padding: '12px', 
-        background: 'linear-gradient(145deg, #ffffff, #f0f0f0)', 
-        border: '3px solid #d4af37', 
-        borderRadius: '12px', 
-        boxShadow: '0 10px 20px rgba(0,0,0,0.15)', 
+      <div className="cert-card animate-slide-up" style={{
+        margin: '1.5rem 0',
+        padding: '12px',
+        background: 'linear-gradient(145deg, #ffffff, #f0f0f0)',
+        border: '3px solid #d4af37',
+        borderRadius: '12px',
+        boxShadow: '0 10px 20px rgba(0,0,0,0.15)',
         display: 'inline-block',
         maxWidth: '100%'
       }}>
         <div style={{ border: '1px solid #e0c05a', padding: '4px', borderRadius: '8px', backgroundColor: '#fff', overflow: 'hidden' }}>
-          <iframe 
-            src="https://drive.google.com/file/d/1Fuux-rFk550nE3Ub4zx0o9XPuHC0JTBg/preview" 
-            title="Training Certificate" 
-            style={{ width: '100%', height: '450px', border: 'none', display: 'block', borderRadius: '4px' }}
-            allow="autoplay"
-          ></iframe>
+          <img
+            src={javaCert}
+            alt="Java Training Certificate"
+            style={{ width: '100%', maxHeight: '450px', objectFit: 'contain', display: 'block', borderRadius: '4px' }}
+          />
         </div>
       </div>
       <ul>

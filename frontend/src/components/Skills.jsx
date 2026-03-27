@@ -44,10 +44,21 @@ const Skills = () => {
               {category.icon}
               <h3>{category.title}</h3>
             </div>
-            <div className="skill-tags">
-              {category.skills.map((skill, i) => (
-                <span key={i} className="skill-tag">{skill}</span>
-              ))}
+            <div className="skill-bars" style={{ display: 'flex', flexDirection: 'column', gap: '0.9rem', marginTop: '1rem' }}>
+              {category.skills.map((skill, i) => {
+                const percent = 75 + (i * 7) % 20; 
+                return (
+                  <div key={i} className="skill-bar-container">
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', marginBottom: '0.4rem' }}>
+                      <span style={{ fontWeight: 500 }}>{skill}</span>
+                      <span style={{ color: 'var(--muted)' }}>{percent}%</span>
+                    </div>
+                    <div style={{ height: '6px', background: 'rgba(150, 150, 150, 0.2)', borderRadius: '999px', overflow: 'hidden' }}>
+                      <div className="skill-progress" style={{ width: `${percent}%`, height: '100%', background: 'var(--accent-gradient)', borderRadius: '999px', transformOrigin: 'left', animation: `progressGrow 1.5s cubic-bezier(0.16, 1, 0.3, 1) ${idx * 0.15}s both` }}></div>
+                    </div>
+                  </div>
+                )
+              })}
             </div>
           </div>
         ))}
